@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular un Video</title>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12"></div>
+            <div class="col-12">
+   
+    <style>
+        /* Estilos globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            padding-top: 50px; /* Ajuste por el menú fijo */
+        }
+
+        /* Menú fijo */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f889d7;
+            color: rgb(255, 0, 208);
+            padding: 50px;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+           font-size: 18px;
+            text-transform: uppercase;
+        }
+        nav ul li a:hover {
+            color: #ff00bf;
+        }
+
+        /* Secciones */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        .project-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
+        }
+
+        .project-card {
+            width: 300px;
+            background-color: #ffcffe;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(255, 0, 179);
+            overflow: hidden;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card h3 {
+            padding: 15px;
+            background-color: #f889d7;
+            color: #fff;
+        }
+        .project-card p {
+            padding: 15px;
+            color: #000000;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .button1 {
+            display: inline-block;
+            background-color: #a200ff;
+           padding: 10px 20px;
+            
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+
+        
+
+        /* Formulario de contacto */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        
+        .contact-form input,
+        .contact-form textarea {
+            padding: 12px;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .contact-form button {
+            padding: 12px 20px;
+            background-color: #ff82e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #9000ff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff00bf;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <div 
+         href="#" class="button1"></a>
+            
+         <a href="index.html" class="button">Volver al inicio
+
+                </a>
+                
+            </div>
+
+
+
+            
+        </ul>
+    </nav>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <h2>Artículo 1</h2>
+        <h2>Charlie Chaplin</h2>
+        <p>Charlie Chaplin es un muy importante en nuestra histora del cine ya que el fue  productor, director, compositor, 
+            guionista y editor cinematográfico. Yo estudiando producción multimedia me encanta ver sus pelculas ya que son muy interesantes
+            como hay esos puntos de giro en sus peliculas que nos llevan a apreciar lo que realmente es el cine, lo que es una buena producción 
+            y los guiones que hizo para cada una de ellas</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular un Video</title>
+</head>
+<body>
+    
+    <video width="640" height="360" controls>
+        <source src="videos/charlie.mp4" type="video/mp4">
+        
+    </video>
+        
+        <div class="project-gallery">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <img src="imagenes/chapln.webp"alt="oyecto 1">
+                <h3>Sobre mi</h3>
+                <p>Charlie Chaplin, fue un actor y comediante británico del cine de comienzos del 
+                    siglo XX, célebre por su personaje Charlot el vagabundo.</p>
+                    <a href="index2.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <img src="imagenes/charlieChaplin.jpg"alt="Proyecto 2">
+                <h3>Sobre mi</h3>
+                <p>Este lo realice porque me gusta mucho Charlie Chaplin y sus peliculas tambien, queria pegarlo en mi cuarto
+                    para este dibujo utilice 10 colores (Verde, amarillo, amarillo fundido, morado, naranja, 
+                    azul claro, azul oscuro, un naranja ladrillo, negro y blanco)</p>
+                    <a href="index2.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <img src="imagenes/ccccccc.jpg"alt="Proyecto 3">
+                <h3>Sobre mi</h3>
+                <p>La pelicula EL GRAN DICTADOR Interpretada por Charles Chaplin, Paulette Goddard, Jack Oakie, Reginald Gardiner, Henry Daniell y Billy Gilbert. Charlie Chaplin fue galardonado como mejor actor por el Círculo de Críticos de Cine de Nueva York. También destacamos sus 5 candidaturas en los premios Óscar en las categorías: Mejor película, mejor guión original, mejor actor principal (Chaplin), mejor actor de reparto (Jack Oakie) y mejor música original. También ganó otros 
+                    2 premios como mejor película extranjera (Premios Kinema Junpo)y mejor cineasta extranjero (Premios Jussi).</p>
+                    <a href="index2.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Sección Sobre mí -->
+     <section id="about">
+        <h2>Artículo 2</h2>
+        <h2>Spiderman</h2>
+        <p>En las películas de Andrew Garfield, las dos películas ganaron premios por efectos 
+            visuales, por qué en la pelicula del lagarto, su diseño era demasiado realista, y 
+            sus movimientos también. Y también ambas películas tienen planos supremamente buenos, 
+            como cuando muere Gwen, o cuando electro pelea con Spiderman en central parck. Si hablamos de la última película, me pareció muy chévere la idea que varias generaciones
+             distintas pudieran estar en una sola película, con los tres Spiderman.
+            Tambien si hablamos de los cómics en si Marvel suele tener crossover que complementan la trama 
+        princpal</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular un Video</title>
+</head>
+<body>
+    
+    <video width="640" height="360" controls>
+        <source src="videos/spiderman.mp4" type="video/mp4">
+        
+    </video>
+        
+        <div class="project-gallery">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                <img src="imagenes/comics.jpg"alt="oyecto 1">
+                <h3>Sobre mi</h3>
+                <p>Es un superhéroe ficticio creado por los estadounidenses Stan Lee y Steve Ditko</p>
+                <a href="index6.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <img src="imagenes/spiderman.jpg"alt="Proyecto 2">
+                <h3>Sobre mi</h3>
+                <p>El dibujo de Spiderman fue uno de los primeros dibujos que realice cuando estaba aprendiendo 
+                    a dibujar, utilice marcador negro para delinear y lo demas fue con colores.</p>
+                    <a href="index6.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <img src="imagenes/spiderm.jpg"alt="Proyecto 3">
+                <h3>Sobre mi</h3>
+                <p>Hasta la fecha se han estrenado nada menos que 12 películas de Spider-Man, de las cuales tres forman parte del Universo Cinematográfico
+                     de Marvel (en el que están Los Vengadores y los Guardianes de la Galaxia) y han sido producidas por Marvel Studios. </p>
+                     <a href="index6.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <h2>Artículo 3</h2>
+        <h2>Looney Tunes</h2>
+        <p>Looney Tunes es una serie de dibujos animados que ha tenido un impacto significativo en la historia del cine. 
+            Influencia en la animación:
+            1. Técnicas de animación innovadoras: Looney Tunes introdujo técnicas de animación innovadoras, como el uso de celuloide, que permitió una mayor flexibilidad y control en la animación.
+            2. Desarrollo de personajes icónicos: Looney Tunes creó personajes icónicos como Bugs
+             Bunny, Porky Pig, Elmer Fudd, entre otros, que se han convertido en símbolos culturales.l</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular un Video</title>
+</head>
+<body>
+    
+    <video width="640" height="360" controls>
+        <source src="videos/looney tunes.mp4" type="video/mp4">
+        
+    </video>
+        
+        <div class="project-gallery">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                
+                <img src="imagenes/looney.jpg"alt="oyecto 1">
+                <h3>Sobre mi</h3>
+                <p>Looney Tunes es una franquicia de medios de dibujos animados 
+                    de la compañía Warner Bros., que comenzó en los cines oficialmente en 1930 con el cortometraje Sinkin' in the Bathtub. </p>
+                    <a href="index7.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <img src="imagenes/colores.jpg"alt="Proyecto 2">
+                <h3>Sobre mi</h3>
+                <p>Este lo realice porque es mi personaje favorito de Looney Tunes 
+                    utilice 6 colores (Rojo, naranja, amarillo. rosado, negro y blanco)</p>
+                    <a href="index7.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <img src="imagenes/tunessssss.jpg"alt="Proyecto 3">
+                <h3>Sobre mi</h3>
+                <p>En 1988, varios personajes de Looney Tunes tuvieron breves apareciones en ¿Quién engañó a Roger Rabbit? Los más notables cameos presentaron a Bugs Bunny, el Pato Lucas, Sam Bigotes, Silvestre, y Piolín. Esta fue la única vez en la cual los personajes de Looney Tunes compartieron tiempo en pantalla con sus rivales de Disney - particularmente en las escenas donde Bugs Bunny y 
+                    Mickey Mouse hacen paracaidismo, y cuando el Pato Lucas y el Pato Donald realizan su secuencia de "Duelo de Pianos".</p>
+                    <a href="index7.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <h2>Artículo 4</h2>
+        <h2>Medusa</h2>
+        <p>La película "Medusa" (también conocida como "Piedra de Medusa" o "Medusa: La piedra de la locura") es una película de terror y fantasía de 1995 dirigida por Jesús Franco. Aunque no es una de las películas más conocidas del director, "Medusa" aporta algunos elementos interesantes al cine:
+            Influencia en el cine de terror y fantasía
+            1. Renovación del mito de Medusa: La película ofrece una visión moderna y oscura del mito de Medusa, lo que la convierte en una obra interesante para los amantes del terror y la fantasía.
+            2. Uso de efectos especiales: Aunque los efectos especiales de la época pueden parecer rudimentarios en comparación con los estándares actuales, "Medusa" 
+            fue una de las primeras películas en utilizar técnicas de efectos especiales para crear la apariencia de la Medusa.</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular un Video</title>
+</head>
+<body>
+    
+    <video width="640" height="360" controls>
+        <source src="videos/medusa.mp4" type="video/mp4">
+        
+    </video>
+        
+        <div class="project-gallery">
+            <!-- Proyecto 1 -->
+            <div class="project-card">
+                
+                <img src="imagenes/medusa.png"alt="oyecto 1">
+                <h3>Sobre mi</h3>
+                <p>Medusa (en griego antiguo Μέδουσα Médousa, ‘guardiana ’, ‘protectora’), ​ a veces referida simplemente como la Gorgona </p>
+                <a href="index1.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-card">
+                <img src="imagenes/pintura.jpg"alt="Proyecto 2">
+                <h3>Sobre mi</h3>
+                <p>Este fue el prmer dibujo que realice con pintura, basado en Medusa</p>
+                <a href="index1.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-card">
+                <img src="imagenes/medusa piedra.png"alt="Proyecto 3">
+                <h3>Sobre mi</h3>
+                <p>El mito de Medusa es una de las historias más intrigantes de la mitología griega, encapsulando temas de belleza, poder y transformación. Medusa, conocida como una de las gorgonas, es presentada como una figura trágica que se transforma de una hermosa mujer en un monstruo aterrador. .</p>
+                <a href="index1.html" class="btn btn-primary">Presiona aquí</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- Sección Sobre mí -->
+        <section id="about">
+            <h2>Artículo 5</h2>
+            <h2>El señor de los anillos</h2>
+            <p>es una trilogía de películas de fantasía y aventuras dirigidas por Peter Jackson, basadas en la novela homónima de J.R.R. Tolkien. La trilogía consta de "La Comunidad del Anillo" (2001), "Las Dos Torres" (2002) y "El Retorno del Rey" (2003). Me encanta esta saga porque tiene
+                
+                1. Uso de efectos visuales: La trilogía de "El Señor de los Anillos" revolucionó el uso de efectos visuales en el cine, con la creación de personajes y criaturas digitales como Gollum, los Ents y los ejércitos de orcos.
+                2. Técnicas de rodaje: Peter Jackson y su equipo desarrollaron técnicas de rodaje innovadoras, como el uso de cámaras de movimiento y la creación de sets y decorados detallados.
+                
+                Narrativa y mundo ficticio
+                1. Mundo ficticio detallado: La trilogía de "El Señor de los Anillos" presentó un mundo ficticio rico y detallado, con una historia y una geografía complejas que han cautivado a audiencias de todo el mundo.
+                2. Narrativa épica: La trilogía cuenta una historia épica de buena vs. mala, con personajes complejos y bien desarrollados que evolucionan a lo largo de la narrativa.
+                
+                Impacto cultural
+                1. Influencia en la cultura popular: "El Señor de los Anillos" ha tenido un impacto significativo en la cultura popular, inspirando numerosas obras de ficción, juegos y otros medios.
+                2. Fandom: La trilogía ha generado un fandom dedicado y apasionado, con fanáticos de todo el mundo que han creado comunidades, arte y otros contenidos inspirados en la serie.
+                
+                Premios y reconocimientos
+                1. Premios de la Academia: La trilogía de "El Señor de los Anillos" ha ganado un total de 17 premios de la Academia, incluyendo Mejor Película y Mejor Director para "El Retorno del Rey".
+                2. Reconocimientos de la crítica: La trilogía ha recibido elogios de la crítica por su dirección, actuación, efectos visuales y partitura musical.</p>
+        </section>
+    
+        <!-- Sección Proyectos -->
+        <section id="projects">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vincular un Video</title>
+    </head>
+    <body>
+        
+        <video width="640" height="360" controls>
+            <source src="videos/señoranillos.mp4" type="video/mp4">
+            
+        </video>
+            
+            <div class="project-gallery">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    
+                    <img src="imagenes/bueno.jpg"alt="oyecto 1">
+                    <h3>Sobre mi</h3>
+                    <p>Dirigidas por Peter Jackson, su éxito y, sobre todo, sus efectos especiales, sentaron un precedente para lo que serían los nuevos códigos del cine de fantasía más épico. </p>
+                    <a href="index5.html" class="btn btn-primary">Presiona aquí</a>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <img src="imagenes/anillo.jpg"alt="Proyecto 2">
+                    <h3>Sobre mi</h3>
+                    <p>Su historia se desarrolla en la Tercera Edad del Sol de la Tierra Media, un lugar ficticio poblado por hombres y otras razas antropomorfas, como los hobbits, los elfos o los enanos, así como por muchas otras criaturas reales y fantásticas. La novela narra el viaje del protagonista principal, Frodo Bolsón, hobbit de la Comarca, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el señor oscuro Sauron.</p>
+                    <a href="index5.html" class="btn btn-primary">Presiona aquí</a>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <img src="imagenes/malo2.webp"alt="Proyecto 3">
+                    <h3>Sobre mi</h3>
+                    <p>Anteriormente llamado Sméagol, era un hobbit de la rama de los Fuertes que vivía en los Campos Gladios. Un año, mientras pescaba con su primo Déagol en el Anduin, este encontró el Anillo Único en el fondo del río y Sméagol le asesinó para adueñarse de él. Tras ser desterrado por su pueblo, Sméagol vagó sin rumbo y acabó refugiándose en la Montañas Nubladas, donde el Anillo alargó su vida de forma antinatural y su poder le consumió casi por completo.</p>
+                    <a href="index5.html" class="btn btn-primary">Presiona aquí</a>
+                </div>
+            </div>
+        </section>
+
+    </body>
+    </html>
